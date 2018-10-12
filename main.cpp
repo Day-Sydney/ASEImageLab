@@ -12,9 +12,9 @@ int main()
 
     for (size_t i = 0; i<width*height*pixelDepth; ++i)
     {
-        image[i] = 128;
+        image[i] = 8;
     }
-    Magick::Image output(width,height,"RGB",Magick::CharPixel,image);
+    Magick::Image output(width,height,"RGB",Magick::CharPixel,image.get());
     output.depth(16);
     output.write("test.bmp");
     return EXIT_SUCCESS;
