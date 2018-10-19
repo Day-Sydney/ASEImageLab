@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-#this sets tje project
+#this sets the project
 project(ImageWriter)
 
 find_package(ImageMagick COMPONENTS Magick++)
